@@ -76,139 +76,65 @@
               style="background-color: lightgray">
               <input type="text" name="tel" required maxlength="15"></td>
           </tr>
-
-            
+          <tr>
+            <td><label for="ing">Ingresos Mensuales</label></td>
+            <td><input type="text" name="ing" required maxlength="10"></td>
+          </tr>
+            <td><label for="com">Comida preferida</label></td>
+            <td><select name="menu" size="5">
+              <option value="lcom" selected>Lomito completo</option>
+              <option value="pmuz">Pizza muzzarela</option>
+              <option value="tjam">Tarta jam&oacute;n</option>
+              <option value="smil">S&oacute;ndwich milanesa</option>
+              <option value="">(Sin selecci&oacute;n)</option>
+          </select></td><br>
+          <tr>
+            <td><label for="obs">Observaciones</label></td>
+            <td><textarea name="obs" cols="30" rows="4" placeholder="Ingrese su observación"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox" name="auto" value="auto"> Tiene Auto Propio<br>
+            <input type="checkbox" name="casa" value="casa" 
+            id="selectcasa"
+            onchange="javascript:showContent()"> Tiene Casa Propia</td>
+          </tr>
         </table>
-
-        <!-- <br />
-        <label for="apellido"> Apellido: </label>
-        <input
-          type="text"
-          name="apellido"
-          placeholder="Paterno y Materno"
-          required
-          maxlength="45"
-          required
-        />
-        <br />
-        <label for="Nombre"> Nombre: </label>
-        <input
-          type="text"
-          name="Nombre"
-          required
-          maxlength="45"
-          required
-          placeholder="Todos"
-        />
-
-        <br />
-        <label for="sexo"> Sexo: </label>
-        <input type="radio" name="sexo" value="M" checked /> Masculino
-        <input type="radio" name="sexo" value="F" /> Femenino
-
-        <br />
-
-        <label for="TD"> Tipo Documento: </label>
-        <select
-          name="TD"
-          style="color: white; background-color: green"
-          required
-        >
-          <option value="DNI">Documento Nacional de Identidad</option>
-          <option value="Pass">Pasaporte</option>
-          <option value="Libre">Libreta Civica</option>
-          <option value="" selected>(Sin selecci&oacute;n)</option>
-        </select>
-
-        <br />
-
-        <label for="nd"> Numero de Documento: </label>
-        <input type="text" name="nd" required maxlength="20" required />
-
-        <br />
-
-        <label for="data"> Fecha Nacimiento: </label>
-        <input type="date" name="data" required />
-
-        <br />
-
-        <label for="tel"> Numero de Telefono: </label>
-        <input
-          type="text"
-          name="tel"
-          required
-          maxlength="5"
-          required
-          disabled
-          placeholder="+54 004"
-          size="3"
-        />
-        <input type="text" name="telnum" required maxlength="20" required />
-
-        <br />
-
-        <label for="ingr"> Ingresos: </label>
-        <input type="int" name="ingr" required />
-
-        <br />
-
-        <label for="TD"> Comida Favorita: </label>
-        <select
-          name="TD"
-          style="color: white; background-color: green"
-          required
-        >
-          <option value="P">Pizza</option>
-          <option value="H">Hamburguesa</option>
-          <option value="e">Empanada</option>
-          <option value="" selected>(Sin selecci&oacute;n)</option>
-        </select>
-
-        <br />
-        <br />
-
-        <label for="obs"> Observaciones: </label>
-        <textarea
-          name="observaciones"
-          cols="30"
-          rows="4"
-          placeholder="Ingrese su observación"
-        ></textarea>
-
-        <br />
-
-        <input type="checkbox" name="auto" value="auto" /> Tiene Auto Propio<br />
-        <input
-          type="checkbox"
-          name="casa"
-          value="casa"
-          id="selectcasa"
-          onchange="javascript:showContent()"
-        />
-        Tiene Casa Propia
-        <br />
       </fieldset>
 
-      <div id="casaP" style="display: none">
+      <div id="casaP" style="display: none"> 
         <fieldset style="color: black">
-          <legend style="background-color: aquamarine">Casa propia</legend>
-
-          <br />
-          <label for="calle"> Calle: </label>
-          <input type="text" name="calle" />
-
-          <br />
-          <label for="ingr"> Altura: </label>
-          <input type="int" name="ingr" />
-
-          <br />
-          <label for="loc"> Localidad: </label>
-          <input type="text" name="loc" />
+        <legend style="background-color: aquamarine">Casa propia - Domicilio</legend>
+        <table>
+          <tr> 
+            <td><label for="calle"> Calle </label></td> 
+            <td><input type="text" name="calle" /></td> 
+          </tr>
+          <tr> 
+            <td><label for="ingr"> Altura </label></td> 
+            <td><input type="int" name="ingr" /></td> 
+          </tr>
+          <tr> 
+            <td><label for="loc"> Localidad </label></td> 
+            <td><input type="int" name="loc" /></td> 
+          </tr>
+          <tr> 
+            <td><label for="prov"> Provincia </label></td> 
+            <td><select name="prov">
+              <option value="cba">Cordoba</option>
+              <option value="sf">Santa Fe</option></td> 
+          </tr>
+          <tr> 
+            <td><label for="cp"> Código Postal </label></td> 
+            <td><input type="int" name="cp" /></td> 
+          </tr>
+        </table> 
         </fieldset>
-      </div>
+      </div><br>
 
-      <button type="submit">Grabar</button>
-      <button type="reset">Reiniciar formulario</button> -->
+      <button type="submit">Grabar</button>&nbsp;&nbsp;&nbsp;
+      <button type="reset">Reiniciar formulario</button>
     </form>
   </body>
 </html>
