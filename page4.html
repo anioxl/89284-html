@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags 
+    PLACEHOLDER ayuda de cargar
+  radiobutton input type="radio"-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Formulario</title>
+
+    <script type="text/javascript">
+      function showContent() {
+        element = document.getElementById('casaP');
+        check = document.getElementById('selectcasa');
+        if (check.checked) {
+          element.style.display = 'block';
+        } else {
+          element.style.display = 'none';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Ejercicio 1</a>
+      <a href="/page2.html">Ejercicio 2</a>
+      <a href="/page3.html">Ejercicio 3</a>
+      <a href="/page4.html">Ejercicio 4</a>
+    </nav>
+    <h4>EJERCICIO 4</h4>
+    <h4 style="color: black">PERSONA</h4>
+
+    <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+      <!--aquí van los elementos para ingreso de datos que se envían a la página especificada en el atributo action-->
+      <fieldset style="color: black">
+        <legend style="background-color: aquamarine">Datos persona</legend>
+        <table>
+          <tr>
+            <td><label for="apellido">Apellido</label></td>
+            <td><input type="text" name="apellido" required maxlength="45"
+             placeholder="paterno y materno"></td>
+            </tr>
+          <tr>
+            <td><label for="nombre">Nombre</label></td>
+            <td><input type="text" name="nombre" required maxlength="45"></td>
+          </tr>
+          <tr>
+            <td><label for="sexo">Sexo</label></td>
+            <td><input type="radio" name="masculino" value="masculino"> Masculino
+            <input type="radio" name="femenino" value="femenino" checked> Femenino<br></td>
+          </tr>
+          <tr>
+            <td><label for="tipodoc">Tipo Documento</label></td>
+            <td><select name="tipodoc" size="3">
+              <option value="dni" selected>Documento Nacional de Identidad</option>
+              <option value="libciv">Libreta Cívica</option>
+              <option value="pas">Pasaporte</option>
+              <option value="libenr">Libreta Enrolamiento</option>
+          </td>
+          </tr>
+
+            
+        </table>
+
+        <!-- <br />
+        <label for="apellido"> Apellido: </label>
+        <input
+          type="text"
+          name="apellido"
+          placeholder="Paterno y Materno"
+          required
+          maxlength="45"
+          required
+        />
+        <br />
+        <label for="Nombre"> Nombre: </label>
+        <input
+          type="text"
+          name="Nombre"
+          required
+          maxlength="45"
+          required
+          placeholder="Todos"
+        />
+
+        <br />
+        <label for="sexo"> Sexo: </label>
+        <input type="radio" name="sexo" value="M" checked /> Masculino
+        <input type="radio" name="sexo" value="F" /> Femenino
+
+        <br />
+
+        <label for="TD"> Tipo Documento: </label>
+        <select
+          name="TD"
+          style="color: white; background-color: green"
+          required
+        >
+          <option value="DNI">Documento Nacional de Identidad</option>
+          <option value="Pass">Pasaporte</option>
+          <option value="Libre">Libreta Civica</option>
+          <option value="" selected>(Sin selecci&oacute;n)</option>
+        </select>
+
+        <br />
+
+        <label for="nd"> Numero de Documento: </label>
+        <input type="text" name="nd" required maxlength="20" required />
+
+        <br />
+
+        <label for="data"> Fecha Nacimiento: </label>
+        <input type="date" name="data" required />
+
+        <br />
+
+        <label for="tel"> Numero de Telefono: </label>
+        <input
+          type="text"
+          name="tel"
+          required
+          maxlength="5"
+          required
+          disabled
+          placeholder="+54 004"
+          size="3"
+        />
+        <input type="text" name="telnum" required maxlength="20" required />
+
+        <br />
+
+        <label for="ingr"> Ingresos: </label>
+        <input type="int" name="ingr" required />
+
+        <br />
+
+        <label for="TD"> Comida Favorita: </label>
+        <select
+          name="TD"
+          style="color: white; background-color: green"
+          required
+        >
+          <option value="P">Pizza</option>
+          <option value="H">Hamburguesa</option>
+          <option value="e">Empanada</option>
+          <option value="" selected>(Sin selecci&oacute;n)</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="obs"> Observaciones: </label>
+        <textarea
+          name="observaciones"
+          cols="30"
+          rows="4"
+          placeholder="Ingrese su observación"
+        ></textarea>
+
+        <br />
+
+        <input type="checkbox" name="auto" value="auto" /> Tiene Auto Propio<br />
+        <input
+          type="checkbox"
+          name="casa"
+          value="casa"
+          id="selectcasa"
+          onchange="javascript:showContent()"
+        />
+        Tiene Casa Propia
+        <br />
+      </fieldset>
+
+      <div id="casaP" style="display: none">
+        <fieldset style="color: black">
+          <legend style="background-color: aquamarine">Casa propia</legend>
+
+          <br />
+          <label for="calle"> Calle: </label>
+          <input type="text" name="calle" />
+
+          <br />
+          <label for="ingr"> Altura: </label>
+          <input type="int" name="ingr" />
+
+          <br />
+          <label for="loc"> Localidad: </label>
+          <input type="text" name="loc" />
+        </fieldset>
+      </div>
+
+      <button type="submit">Grabar</button>
+      <button type="reset">Reiniciar formulario</button> -->
+    </form>
+  </body>
+</html>
