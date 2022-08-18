@@ -52,7 +52,7 @@
             <td><label for="sexo">Sexo</label></td>
             <td><input type="radio" name="masculino" value="masculino"> Masculino
             <input type="radio" name="femenino" value="femenino" checked> Femenino<br></td>
-          </tr>
+          </tr><br>
           <tr>
             <td><label for="tipodoc">Tipo Documento</label></td>
             <td><select name="tipodoc" size="3">
@@ -61,6 +61,20 @@
               <option value="pas">Pasaporte</option>
               <option value="libenr">Libreta Enrolamiento</option>
           </td>
+          </tr><br>
+          <tr>
+            <td><label for="numdoc">Número de Documento</label></td>
+            <td><input type="text" name="numdoc" required maxlength="20"></td>
+          </tr>
+          <tr>
+            <td><label for="fechanac">Fecha Nacimiento</label></td>
+            <td><input type="date" name="fechanac" required></td>
+          </tr>
+          <tr>
+            <td><label for="pais">Teléfono</label></td>
+            <td><input type="text" name="pais" required maxlength="4" placeholder="0054"
+              style="background-color: lightgray">
+              <input type="text" name="tel" required maxlength="15"></td>
           </tr>
 
             
