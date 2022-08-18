@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Inicio</title>
+    <title>Ejercicio 1</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!--
@@ -12,14 +12,76 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <h1>TITULO</h1>
-    <i>hola</i>, <br> buenas <b>!!</b>
-    <!-- <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+     <nav>
+      <a href="/" aria-current="page">Ejercicio 1</a>
+      <a href="/page2.html">Ejercicio 2</a>
+      <a href="/page3.html">Ejercicio 3</a>
     </nav>
     <main>
-      <h1>Home page</h1>
-    </main> -->
+      <h4>EJERCICIO 1</h4>
+      <p>Análisis de un documento html con las herramientas del
+        navegador Chrome. Analice la página web del sitio
+        <a href="www.frc.utn.edu.ar">www.frc.utn.edu.ar</a> con Chrome devtools
+        Responda las siguientes preguntas:</p>
+        <h5>1. ¿Cuantos Kilobytes se transfieren al navegador para visualizar la
+          página de manera completa? Cuanto tiempo demora en cargar la página.
+          Si se utiliza el caché del navegador, demora lo mismo?</h5>
+          <i>Se transfieren 2.6MB y tarda 4.3 seg en cargar. Desactivando el
+            cache, tarda mas, tarda 2.53 seg</i>
+        <h5>2. ¿La página posee errores o warnings?</h5>
+        <i>No pose errores ni warnings</i>
+        <h5>3. ¿Cuál es el archivo que demora mas tiempo en descargarse de la página</h5>
+        <i>El archivo que mas tarda en cargar se llama id es de tipo xhr y
+          tarda 3.96 seg</i>
+        <h5>4. ¿Todos los archivos provienen del mismo servidor?</h5>
+        <i>No. La mayoria de los archivos provienen del mismo servidor, pero otros
+          por ejemplo los videos de youtube no.</i>
+        <h5>5. ¿Cuántas imágenes posee?, qué tiempo que demora en descargarlas? ¿Cual
+          es el imagen de mayor tamaño en kilobytes que se descarga del sitio?</h5>
+        <i>Pose 55 imagenes y la que mas pesa es youtube%20redes.jpg de 166kB</i>
+        <h5>6. ¿Cuántos archivos de hojas de estilo utiliza?</h5>
+        <i>Utiliza una solo ppal.css</i>
+        <h5>7. En qué versión de html indica el documento que está realizada la
+          página</h5>
+        <i>XHTML 1.0</i>
+        <h5>8. ¿Los archivos javascript y/o css están minificados?</h5>
+        <i>Los archivos css y js no estan minificados</i>
+        <h5>9. ¿Qué tiempo demoraría la página en descargar en un equipo con señal de
+          datos de una red Regular 3G?</h5>
+        <i>Tarda 2 min</i>
+        <h5>10. La página es compatible con el estándar html indicado en la cabecera.
+          Analice la misma en https://validator.w3.org/</h5>
+        <i>La página no es compatible, el validador arroja 23 errores respecto al estándar de la versión que utiliza.</i>
+        <h5>11. Analice las recomendaciones para mejorar la velocidad de carga de la
+          página en https://developers.google.com/speed/pagespeed/</h5>
+        <i>Algunas recomendaciones que nos da la pagina es reducir el código
+          javascript y css no utilizado, cambiar el formato de las imágenes,
+          reducir el tiempo de respuesta del servidor, eliminar los recursos
+          que bloquean el renderizado, utilizar un tamaño adecuado para las
+          imágenes y codificarlas de forma eficaz.</i>
+        <h5>12. Realice el mismo análisis con el sitio www.cba.gob.ar</h5>
+        <i><b>12.1.</b> Se transfieren 2.8MB y tarda 40.95 seg en cargar. Desactivando el
+          cache, tarda mas, tarda 1 min</i><br><br>
+        <i><b>12.2.</b> La página posee 32 errores, y 1 warning</i><br><br>
+        <i><b>12.3.</b> El archivo que mas tarda en cargar se llama widgets.js?ver=6.0.1 es
+          de tipo js y tarda 1.12 seg</i><br><br>
+        <i><b>12.4.</b> No, usa archivos pertenecientes a varios servidores</i><br><br>
+        <i><b>12.5.</b> Pose 64 imagenes y la que mas pesa es nuevo-edificio-ersep.jpg de
+          166kB</i><br><br>
+        <i><b>12.6.</b> Utiliza una 28 hojas de estilos, que pertenecen a diferentes
+          servidores.</i><br><br>
+        <i><b>12.7.</b> Versión html 5</i><br><br>
+        <i><b>12.8.</b> Los archivos css y js que son propios del servidor de la pagina
+          estan minificados</i><br><br>
+        <i><b>12.9.</b> Tarda 2.4 min</i><br><br>
+        <i><b>12.10.</b> La pagina es compatible, tiene algunos errores en las convenciones
+          de w3, pero funciona.</i><br><br>
+        <i><b>12.11.</b> Algunas recomendaciones que nos da la pagina es eliminar el bloquedo de render de los recursos, habilitar la compresion de texto, reducir
+          coidgo css y js no utilizado, utilizar imagenes en formatos mas
+          actuales y reducir el tiempo de respuesta inicial del servidor.</i><br><br>
+
+
+
+    </main> 
   </body>
 </html>
